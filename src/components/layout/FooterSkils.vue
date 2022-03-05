@@ -16,9 +16,9 @@
             description: "Прогрессивный JavaScript фреймворк для создания пользовательских интерфейсов."
           },
           {
-            title: "TypeScript",
-            link: "https://www.typescriptlang.org/",
-            description: "Язык программирования, позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript."
+            title: "TailwindCSS",
+            link: "https://tailwindcss.com/",
+            description: "CSS-фреймворк, предлагающий обширный каталог классов и инструментов для облегчения стилизации сайта или приложения."
           }, 
           {
             title: "Git",
@@ -26,9 +26,9 @@
             description: "Распределённая система управления версиями."
           },
           {
-            title: "TailwindCSS",
-            link: "https://tailwindcss.com/",
-            description: "CSS-фреймворк, предлагающий обширный каталог классов и инструментов для облегчения стилизации сайта или приложения."
+            title: "TypeScript",
+            link: "https://www.typescriptlang.org/",
+            description: "Язык программирования, позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript."
           }, 
           {
             title: "SASS",
@@ -48,7 +48,7 @@
     <ul class="list-none">
       <li v-for="skill in skills" :key="skill.id"
           class="inline tehnology-list">
-        <a v-bind:href="skill.link" v-bind:title="skill.description" target="_blank" 
+        <a v-bind:href="skill.link" v-bind:title="skill.description" target="_blank" rel="nofollow"
             class="underline decoration-pink-500 hover:text-pink-500 active:text-pink-700 transition-colors">
             {{ skill.title }}
         </a>
