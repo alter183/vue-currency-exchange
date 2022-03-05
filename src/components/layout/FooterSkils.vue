@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { defineComponent } from 'vue';
 
   declare interface Skills {
     title: string,
@@ -6,7 +7,7 @@
     description: string
   }
 
-  export default {
+  export default defineComponent({
     data(){
       return {
         skills: [
@@ -38,7 +39,7 @@
         ] as Skills[],
       }
     }
-  };
+  });
 
 </script>
 
@@ -46,7 +47,7 @@
   <p class="mb-4">
     Проект сделан для демонстрации навыков:
     <ul class="list-none">
-      <li v-for="skill in skills" :key="skill.id"
+      <li v-for="skill in skills" :key="skill.title"
           class="inline tehnology-list">
         <a v-bind:href="skill.link" v-bind:title="skill.description" target="_blank" rel="nofollow"
             class="underline decoration-pink-500 hover:text-pink-500 active:text-pink-700 transition-colors">

@@ -1,16 +1,16 @@
 <script lang="ts">
-  export default {
+  import { defineComponent } from 'vue';
+
+  export default defineComponent({
     props: {
-      link: {
-        type: String,
-        default: 'https://github.com/alter183/'
-      },
-      title: {
-        type: String,
-        default: 'Смотреть код'
-      },
+      link: String,
+      title: String,
     },
-  }
+    setup(props) {
+      props.link;
+      props.title;
+    }
+  });
 </script>
 
 <template>

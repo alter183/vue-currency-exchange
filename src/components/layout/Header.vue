@@ -14,7 +14,7 @@
   <header class="py-2 md:py-4 bg-slate-200">
       <div class="container px-4 mx-auto flex justify-center md:justify-between items-center">
         <Logo />
-        <GithubButton link="https://github.com/alter183/vue-currency-exchange" />
+        <GithubButton link="https://github.com/alter183/vue-currency-exchange" title="Смотреть код" />
       </div>
     </header>
 </template>
