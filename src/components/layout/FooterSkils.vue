@@ -44,7 +44,7 @@
 
 <template>
   <p class="mb-4">
-    Проект сделан для демонстрации навыков:
+    Проект сделан для демонстрации навыков:
     <ul class="list-none">
       <li v-for="skill in skills" :key="skill.id"
           class="inline tehnology-list">

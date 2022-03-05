@@ -1,15 +1,21 @@
 <script lang="ts">
   export default {
     props: {
-      link: String,
-      title: String
-    }
+      link: {
+        type: String,
+        default: 'https://github.com/alter183/'
+      },
+      title: {
+        type: String,
+        default: 'Смотреть код'
+      },
+    },
   }
 </script>
 
 <template>
     <a v-bind:href="link" v-bind:title="title + ' на GitHub'" target="_blank" 
-       class="flex items-center gap-4 break-normal bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-900 text-slate-50 pl-4 pr-2 py-2 rounded-full transition-colors">
+       class=" hidden md:inline-flex items-center gap-4 break-normal bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-900 text-slate-50 pl-4 pr-2 py-2 rounded-full transition-colors">
         {{ title }}
         <svg version="1.1" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 fill-slate-50">
           <g transform="matrix(1.3333 0 0 -1.3333 0 666.65)">
