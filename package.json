@@ -6,10 +6,12 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "postinstall": "typings install"
   },
   "dependencies": {
-    "vue": "^3.2.31"
+    "vue": "^3.2.31",
+    "typings": "^2.1.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

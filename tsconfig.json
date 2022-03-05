@@ -2,12 +2,17 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-
+  "exclude": [
+    "node_modules",
+  ],
   "references": [
     {
       "path": "./tsconfig.vite-config.json"
