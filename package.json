@@ -10,8 +10,8 @@
     "postinstall": "typings install"
   },
   "dependencies": {
-    "vue": "^3.2.31",
-    "typings": "^2.1.1"
+    "typings": "^2.1.1",
+    "vue": "^3.2.31"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
